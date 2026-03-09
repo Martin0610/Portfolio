@@ -1,0 +1,186 @@
+body{
+font-family:Arial;
+margin:0;
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+text-align:center;
+padding:80px;
+background:#1e293b;
+animation:fadeIn 2s;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+nav a{
+margin:15px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+transform:scale(1.1);
+}
+
+section{
+padding:70px;
+text-align:center;
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+margin:20px 0;
+object-fit:cover;
+border:4px solid #38bdf8;
+}
+
+.grid{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:#334155;
+padding:25px;
+border-radius:10px;
+width:220px;
+transition:0.4s;
+text-decoration:none;
+color:white;
+display:block;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+background:#475569;
+}
+
+.resume-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.resume-btn:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#1e293b;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:all 1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.background span{
+position:absolute;
+width:60px;
+height:60px;
+background:#38bdf8;
+opacity:0.1;
+animation:float 20s linear infinite;
+border-radius:50%;
+}
+
+.background span:nth-child(1){
+left:10%;
+animation-delay:0s;
+}
+
+.background span:nth-child(2){
+left:40%;
+animation-delay:5s;
+}
+
+.background span:nth-child(3){
+left:70%;
+animation-delay:10s;
+}
+
+.background span:nth-child(4){
+left:90%;
+animation-delay:15s;
+}
+
+a{
+color:#38bdf8;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+}
+100%{
+transform:translateY(-10vh);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+.contact-form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+.contact-form button{
+background:linear-gradient(90deg,#5b6ee1,#8a4be3);
+color:white;
+padding:14px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-form button:hover{
+opacity:0.9;
+}
